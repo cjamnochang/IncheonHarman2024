@@ -48,7 +48,7 @@ void FND_4(char *inf) // segment Image 배열
 }
 //문자열 고려서 안전영역 고려
 //정적변수 영역에 부여
-char* Trans(int num)//10진수 정수 ==> 16진수 문자열로 변환 : 65535 ==> 0xFFFF, 56506 ==> 0xDCBA
+char* Trans(unsigned long num)//10진수 정수 ==> 16진수 문자열로 변환 : 65535 ==> 0xFFFF, 56506 ==> 0xDCBA
 {								//16비트 세그문트 이미지 배열
 	int n1 = num%0x10;			//A 1		:문자가 아닌 숫자
 	int n2 = (num/0x10)%16;		//B 16		:
@@ -79,14 +79,22 @@ char* Trans(int num)//10진수 정수 ==> 16진수 문자열로 변환 : 65535 =
 int main(void)
 {
 	
-	int i,j=0;
-    //DDRD = 0x07;
-	DDRD = 0xff;
-	DDRE = 0x0f;
+	int i = 0;
+	unsigned long j = 0;
+    //int i,j = 0;
+	DDRD = 0xff; //세그먼트 제어 판 8개를 출력으로 설정
+	DDRE = 0x0f; // 자릿수 선택 핀 4개를 출력으로 설정
+	DDRB &= ~0x01;
+	int strat = 0; //0 stop 1 start 2 pause
+	reset();
     while (1) 
     {
+		//TogglePinA(2,__delay_t); // PortA의 0번째 비트를 점멸
+		//LED(&PORTD, 1); // PortD의 0번쨰 비트를 점멸
+		if(!(PINB & 1) )
 		FND_4(Trans(j++));
 		_delay_ms(1);
-    }
+    
+	}
 	return 0;
 }

@@ -11,6 +11,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "test02-7seg2.kiho", "test02
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "tset02-7seg2-pf", "tset02-7seg2-pf\tset02-7seg2-pf.cproj", "{CA4BBBDC-5956-4752-B954-99EFF4E6838C}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "tset03-intr", "tset03-intr\tset03-intr.cproj", "{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -33,6 +35,10 @@ Global
 		{CA4BBBDC-5956-4752-B954-99EFF4E6838C}.Debug|AVR.Build.0 = Debug|AVR
 		{CA4BBBDC-5956-4752-B954-99EFF4E6838C}.Release|AVR.ActiveCfg = Release|AVR
 		{CA4BBBDC-5956-4752-B954-99EFF4E6838C}.Release|AVR.Build.0 = Release|AVR
+		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Debug|AVR.ActiveCfg = Debug|AVR
+		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Debug|AVR.Build.0 = Debug|AVR
+		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Release|AVR.ActiveCfg = Release|AVR
+		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

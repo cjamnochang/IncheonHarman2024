@@ -13,6 +13,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "tset02-7seg2-pf", "tset02-7
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "tset03-intr", "tset03-intr\tset03-intr.cproj", "{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "test04-Timer", "test04-Timer\test04-timer.cproj", "{FDA4D897-8BBD-46B6-9601-1AC3D2FF30BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -39,6 +41,10 @@ Global
 		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Debug|AVR.Build.0 = Debug|AVR
 		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Release|AVR.ActiveCfg = Release|AVR
 		{17C76EEB-BB60-4E1A-AA08-6B601D3A63CD}.Release|AVR.Build.0 = Release|AVR
+		{FDA4D897-8BBD-46B6-9601-1AC3D2FF30BF}.Debug|AVR.ActiveCfg = Debug|AVR
+		{FDA4D897-8BBD-46B6-9601-1AC3D2FF30BF}.Debug|AVR.Build.0 = Debug|AVR
+		{FDA4D897-8BBD-46B6-9601-1AC3D2FF30BF}.Release|AVR.ActiveCfg = Release|AVR
+		{FDA4D897-8BBD-46B6-9601-1AC3D2FF30BF}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

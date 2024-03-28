@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-main-intr.c
+main-Timer.c
 
 Segment.c
 
